@@ -1,1 +1,2 @@
-# Financial_Econometrics_with_R
+# Financial Econometrics with R
+Here I will post several useful materials that I frequently use when working.
