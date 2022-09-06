@@ -3,7 +3,7 @@ Here, I focus in the typical scenario faced by a portfolio manager in an investm
 
 In this exercise I apply three key methodologies widely used in Financial Econometrics:
 1. A GJR-GARCH model for conditional volatility with unconditional mean and a Hansen's (1994) Skewed-t distribution for the errors.
-2. A C-Vine/R-Vine copula model for dependence.
+2. A R-Vine copula model for dependence.
 3. Portfolio optimization problem as in Rockafellar and Uryasev (2000).
 
  
