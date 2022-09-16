@@ -11,14 +11,13 @@ In this exercise I apply three key methodologies widely used in Financial Econom
 
  
 
-## 1) portfolio_optimization
-In the "portfolio_optimization" notebook, I illustrate the whole process followed to solve the portfolio optimization problem as suggested by Rockafellar and Uryasev (2000). This methodology requires the simulation of a large number of tomorrow return series. To do this, I use a GJR-GARCH (1,1,1) with Skewed-t errors and a R-Vine copula.
+## 1) Portfolio optimization and efficient frontier
+In the "PortOptim1_RockafellarUryasev(2000)" notebook, I illustrate the whole process followed to solve the portfolio optimization problem as suggested by Rockafellar and Uryasev (2000). This methodology requires the simulation of a large number of tomorrow return series. To do this, I use a GJR-GARCH (1,1,1) with Skewed-t errors and a R-Vine copula.
 
 In short, the problem that I solve here is the following. We have d stocks and want to conform a portfolio of them, that is, we need to decide the proportion of our wealth that w_{i,t} that will be invested in each stock. How do we choose this allocation? We choose the portfolio strategy that minimizes market risk.
 
-## 2) rolling_window_evaluation
-In this notebook, I evaluate the portfolio performance using the approach illustrated in 1). How? As new information arrives for each stock at day t, the
-portfolio manager has to make a forecast of asset returns for the next day t + 1. Based upon the forecast of asset returns, the manager rebalances the portfolio weights  to construct a new portfolio that achieves the desired investment objective (e.g., market risk minimization). In this example, weights rebalancing is done every 20 days.
+## 2) Portfolio performance
+In the "PortOptim1_RollingWindowEvaluation" notebook, I evaluate the portfolio performance using the approach illustrated in 1). How? As new information arrives for each stock at day t, the portfolio manager has to make a forecast of asset returns for the next day t + 1. Based upon the forecast of asset returns, the manager rebalances the portfolio weights  to construct a new portfolio that achieves the desired investment objective (e.g., market risk minimization). In this example, I consider three cases for weights rebalancing, i) weights rebalancing every 20 days, ii) weights fixed the whole investment period, iii) equally-weighted weights fixed the whole investment period.
 
 To measure performance, I compute the evolution of wealth by hypothetically investing $1,000 at day t=0. The evolution of wealth is given by  
 ```math
